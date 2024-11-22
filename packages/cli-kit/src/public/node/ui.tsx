@@ -650,6 +650,7 @@ interface ThrowInNonTTYOptions {
 
 // eslint-disable-next-line max-params
 function throwInNonTTY({message, stdin = undefined}: ThrowInNonTTYOptions, uiDebugOptions: UIDebugOptions) {
+  return
   if (isTTY({stdin, uiDebugOptions})) return
 
   const promptText = tokenItemToString(message)
