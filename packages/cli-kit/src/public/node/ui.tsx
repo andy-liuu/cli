@@ -658,7 +658,7 @@ function throwInNonTTY({message, stdin = undefined}: ThrowInNonTTYOptions, uiDeb
 
 ${outputContent`${outputToken.cyan(promptText)}`.value}
 
-This usually happens when running a command non-interactively, for example in a CI environment, or when piping to or from another process.`
+THIS IS MY FORK. This usually happens when running a command non-interactively, for example in a CI environment, or when piping to or from another process.`
   throw new AbortError(
     errorMessage,
     'To resolve this, specify the option in the command, or run the command in an interactive environment such as your local terminal.',
